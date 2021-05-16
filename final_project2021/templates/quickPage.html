@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+	<link rel="stylesheet"  href="{{url_for('static',filename='css/styleQuick.css')}}"/>
+
+</head>
+
+<body>
+	<br />
+	<p class="header">
+	Quick Sort 
+	</p>
+    <div id="leftContainer">
+            <table>
+                <tr>
+                    <td>
+                 <input type="text" id="value" value=""  placeholder="" size="18">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="NumElements" class="btn" type="button" onclick="NumElements();">Num Of Elements</button>
+                    </td>
+                </tr>
+              
+                   <tr>
+                    <td>
+                        <button id="valElement" class="btn" type="button" onclick="generatearray_specif();">Insert Element</button>
+                    </td>
+                </tr>
+            
+              
+                <tr>
+                    <td>
+                       
+                        <button class="btn" type="button"  onclick="QuickSortStart();">Quick Sort </button></br>
+                      
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       
+                        <button class="btn" type="button"  onclick="PrintPng();">Print jpg </button></br>
+                      
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       
+                        <button class="btn" type="button"  onclick="print();">Print/Download pdf </button></br>
+                      
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="rightContainer">
+	<div id="array"></div>
+	<div id="count"></div>
+	<br />
+	<h2 class="range"
+		style="text-align: center"></h2>
+    </div>
+    <script src="{{url_for('static', filename='js/quick.js')}}"></script>
+
+
+</body>
+</html>
